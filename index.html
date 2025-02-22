@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Greenscape</title>
+    <title>Unity Web Player | Greenroom</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Greenscape</div>
+        <div id="unity-build-title">Greenroom</div>
       </div>
     </div>
     <script>
@@ -52,16 +52,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/7df7fa6c1e3c69ec6f2211468b0a3b5d.loader.js";
+      var loaderUrl = buildUrl + "/5f253853afacb9035b8faa8c9acf7be1.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/8c9aad8da82238590a3f3eee7a5934fd.data.unityweb",
+        dataUrl: buildUrl + "/24fdcb8a169231484641c8d7a5b88f8b.data.unityweb",
         frameworkUrl: buildUrl + "/5f5e26d764226878e339dcac143ebe1d.framework.js.unityweb",
-        codeUrl: buildUrl + "/ea9a7c1059fe54d1882001a6f6996945.wasm.unityweb",
+        codeUrl: buildUrl + "/75665ae1ada3912b398a9abbe6defb2d.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Giannis",
-        productName: "Greenscape",
-        productVersion: "0.0.1",
+        productName: "Greenroom",
+        productVersion: "0.0.2",
         showBanner: unityShowBanner,
       };
 
@@ -98,8 +98,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
